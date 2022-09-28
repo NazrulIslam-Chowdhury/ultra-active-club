@@ -2,7 +2,6 @@
     display: flex;
     color: rgb(34, 119, 119);
     gap: 5px;
-    margin: 0 40px 0 40px;
 }
 
 .header h1 {

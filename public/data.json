@@ -1,42 +1,42 @@
 [
     {
         "id": 1,
-        "url": "images (2).jpeg",
+        "img": "https://i0.wp.com/post.healthline.com/wp-content/uploads/2020/01/Runner-training-on-running-track-1296x728-header-1296x728.jpg?w=1155&h=1528",
         "title": "Running",
         "details": "Running everyday is a good exercise",
         "duration": 30
     },
     {
         "id": 2,
-        "url": "images (3).jpeg",
+        "img": "https://www.kreedon.com/wp-content/uploads/2021/08/oYDbf5hQAePHEBNZTQMXRA.jpg",
         "title": "Push-ups",
         "details": "Doing some push-ups everyday keep body fit",
         "duration": 10
     },
     {
         "id": 3,
-        "url": "images (6).jpeg",
+        "img": "https://www.foodspring.be/en/magazine/wp-content/uploads/2020/11/Sit-ups-Endposition-%C2%A9Geber86.jpg",
         "title": "Sit-ups",
         "details": "Sit-ups can fit stomach",
         "duration": 10
     },
     {
         "id": 4,
-        "url": "images (4).jpeg",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA0SZfllX-TAzIEM4pb0uq-z2HAygx8_5TdQ&usqp=CAU",
         "title": "Walking",
         "details": "Walking is an exercise that everyone can do",
         "duration": 60
     },
     {
         "id": 5,
-        "url": "images (5).jpeg",
+        "img": "https://img.freepik.com/free-vector/cyclist-riding-bike-road-scene_603843-2851.jpg?w=2000",
         "title": "Cycling",
         "details": "Cycling is also an exercise that everyone should do",
         "duration": 30
     },
     {
         "id": 6,
-        "url": "images (7).jpeg",
+        "img": "https://cdn.muscleandstrength.com/sites/default/files/field/image/workout/fit-man-dumbbell-workout-400.jpg",
         "title": "Dumbbell",
         "details": "dumbbell can build your hand muscles",
         "duration": 20
