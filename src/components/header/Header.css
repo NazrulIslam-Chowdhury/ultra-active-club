@@ -1,0 +1,16 @@
+.header {
+    display: flex;
+    color: rgb(34, 119, 119);
+    gap: 5px;
+    margin: 0 40px 0 40px;
+}
+
+.header h1 {
+    margin-top: 28px;
+}
+
+.font-awesome {
+    margin-top: 2%;
+    width: 30px;
+    height: 30px;
+}
