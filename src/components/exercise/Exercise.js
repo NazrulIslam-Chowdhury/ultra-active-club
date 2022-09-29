@@ -18,6 +18,7 @@ const Exercise = () => {
         setExerciseDetails(newExerciseDetails);
     }
 
+
     return (
         <div>
             <h3 style={{ fontSize: '25px' }}>Select your exercise</h3>
@@ -30,7 +31,8 @@ const Exercise = () => {
                 </div>
 
                 <div className='exercise-duration'>
-                    <ExerciseDetails exerciseDetails={exerciseDetails}></ExerciseDetails>
+                    <ExerciseDetails exerciseDetails={exerciseDetails}>
+                    </ExerciseDetails>
                 </div>
             </div>
 

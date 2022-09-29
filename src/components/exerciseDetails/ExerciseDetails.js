@@ -9,18 +9,21 @@ const ExerciseDetails = (props) => {
     let exerciseTime = 0;
     for (const exercise of exerciseDetails) {
         exerciseTime = exerciseTime + exercise.duration;
-    }
+
+    };
+
     const [rest, setRest] = useState();
     const [breakTime, setBreakTime] = useState();
 
     const addBreakTimeOnClick = (event) => {
-        const list = {};
+        let list = {};
         const restTime = event.target.value;
         setRest(restTime);
 
         const storedData = localStorage.setItem('rest-time', JSON.stringify(event.target.value));
         if (storedData) {
             list = JSON.parse(storedData);
+            // console.log(list)
         }
     };
 
@@ -30,6 +33,8 @@ const ExerciseDetails = (props) => {
             setBreakTime(breaks)
         }
     }, [rest])
+
+
 
     return (
         <div className='exerciseTime-details'>
