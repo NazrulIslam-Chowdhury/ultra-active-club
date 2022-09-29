@@ -7,7 +7,7 @@ const BreakTime = (props) => {
     return (
 
         <div className='break-time'>
-            <p onClick={() => addBreakTimeOnClick(props.breakTime)}>
+            <p onClick={() => addBreakTimeOnClick(breakTime)}>
                 <b>{breakTime}</b>mins
             </p>
         </div>
