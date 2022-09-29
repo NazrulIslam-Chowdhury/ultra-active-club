@@ -3,6 +3,7 @@ import './ExerciseType.css';
 
 const ExerciseType = (props) => {
     const { img, title, details, duration } = props.exercise;
+    const { addOnClick } = props;
     return (
         <div className='exercise-type'>
             <img src={img} alt="" />
@@ -12,7 +13,7 @@ const ExerciseType = (props) => {
                 <p>Age limit: 20-30</p>
                 <p>Duration:{duration} mins</p>
             </div>
-            <button className='btn-add'>
+            <button onClick={() => addOnClick(props.exercise)} className='btn-add'>
                 <p>Add to list</p>
             </button>
         </div>
