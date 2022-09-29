@@ -1,3 +1,5 @@
+import { faListAlt } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import './ExerciseType.css';
 
@@ -14,7 +16,7 @@ const ExerciseType = (props) => {
                 <p>Duration:{duration} mins</p>
             </div>
             <button onClick={() => addOnClick(props.exercise)} className='btn-add'>
-                <p>Add to list</p>
+                <p>Add to list    <FontAwesomeIcon icon={faListAlt}></FontAwesomeIcon> </p>
             </button>
         </div>
     );

@@ -1,23 +1,29 @@
+.exerciseTime-details {
+    padding: 10px;
+}
+
 .person-details img {
     width: 60px;
     height: 60px;
     border-radius: 50%;
 }
 
-
-.exercise-details p {
+.break-time {
+    display: flex;
+    justify-content: space-evenly;
     background-color: rgba(34, 119, 119, 0.227);
-    padding: 15px;
+    padding: 10px 5px;
     border-radius: 10px;
 }
 
-.break-type {
+.break-time button {
     background-color: white;
     border-radius: 50%;
     padding: 5px;
+    border: none;
 }
 
-.break-type:hover {
+.break-time button:hover {
     background-color: rgb(34, 119, 119);
 }
 
