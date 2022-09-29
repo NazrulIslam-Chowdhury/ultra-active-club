@@ -1,15 +1,22 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { faMapLocation } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './ExerciseDetails.css';
 
+
 const ExerciseDetails = (props) => {
     const { exerciseDetails } = props;
-    console.log(exerciseDetails)
+    const { breakTimes } = props;
     let exerciseTime = 0;
     for (const exercise of exerciseDetails) {
         exerciseTime = exerciseTime + exercise.duration;
     }
+    let breakTime = 0;
+    for (const breakTime of breakTimes) {
+        // breakTime = breakTime + breakTime.breakTime;
+        console.log(breakTime)
+    }
+
     return (
         <div className='exercise-details'>
             <div className='person-details'>
@@ -33,24 +40,11 @@ const ExerciseDetails = (props) => {
                 </div>
             </div>
             <p><b style={{ fontSize: '20px' }}>Add a break</b></p>
-            <div style={{ display: 'flex', gap: '15px', backgroundColor: 'rgba(34, 119, 119, 0.478)', borderRadius: '10px', justifyContent: 'space-evenly' }}>
-                <p className='break-type'>
-                    <b style={{ fontSize: '25px' }}>5</b>mins
-                </p>
-                <p className='break-type'>
-                    <b style={{ fontSize: '25px' }}>10</b>mins
-                </p>
-                <p className='break-type'>
-                    <b style={{ fontSize: '25px' }}>15</b>mins
-                </p>
-                <p className='break-type'>
-                    <b style={{ fontSize: '25px' }}>20</b>mins
-                </p>
-            </div>
+
             <p><b style={{ fontSize: '20px' }}>Exercise details</b></p>
             <div className='exercise-details'>
                 <p><b>Exercise time</b>  {exerciseTime} mins</p>
-                <p><b>Break time</b></p>
+                <p><b>Break time</b>{breakTime} mins</p>
             </div>
             <button className='btn-activity'>
                 <p>Activity Completed</p>

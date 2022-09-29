@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import ExerciseDetails from '../exerciseDetails/ExerciseDetails';
 import ExerciseType from '../exerciseType/ExerciseType';
+import BreakTime from '../../breaktime/BreakTime';
 import './Exercise.css';
 
 const Exercise = () => {
@@ -13,9 +14,22 @@ const Exercise = () => {
             .then(data => setExercises(data))
     }, [])
     const addOnClick = (exercise) => {
-        console.log(exercise);
+        // console.log(exercise);
         const newExerciseDetails = [...exerciseDetails, exercise];
         setExerciseDetails(newExerciseDetails);
+    }
+
+    const [breakTimes, setBreakTimes] = useState([])
+    useEffect(() => {
+        fetch('data2.json')
+            .then(res => res.json())
+            .then(data => setBreakTimes(data))
+    }, [])
+
+    const addBreakTimeOnClick = (breakTime) => {
+        const newBreakTime = [...breakTimes, breakTime];
+        setBreakTimes(newBreakTime);
+        // console.log(breakTime)
     }
 
     return (
@@ -30,9 +44,13 @@ const Exercise = () => {
                 </div>
 
                 <div className='exercise-duration'>
-                    <ExerciseDetails exerciseDetails={exerciseDetails}></ExerciseDetails>
+                    <ExerciseDetails exerciseDetails={exerciseDetails} breakTimes={breakTimes}></ExerciseDetails>
+                    {
+                        breakTimes.map(breakTime => <BreakTime onClick={addBreakTimeOnClick} breakTime={breakTime} key={breakTime.id}></BreakTime>)
+                    }
                 </div>
             </div>
+
         </div>
     )
 };

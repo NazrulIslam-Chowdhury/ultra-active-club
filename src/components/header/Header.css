@@ -1,10 +1,7 @@
 .header {
-    background-color: rgba(34, 119, 119, 0.997);
     display: flex;
-    color: black;
+    color: rgb(34, 119, 119);
     gap: 5px;
-    position: sticky;
-    top: 0;
 }
 
 .header h1 {

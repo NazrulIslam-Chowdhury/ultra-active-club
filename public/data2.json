@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "breakTime": 5
+    },
+    {
+        "id": 2,
+        "breakTime": 10
+    },
+    {
+        "id": 3,
+        "breakTime": 15
+    },
+    {
+        "id": 4,
+        "breakTime": 20
+    }
+]
