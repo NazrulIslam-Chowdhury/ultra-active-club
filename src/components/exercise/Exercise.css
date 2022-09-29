@@ -9,3 +9,41 @@
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 15px;
 }
+
+.person-details img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.exercise-duration,
+.exercise-details p {
+    background-color: rgba(34, 119, 119, 0.227);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.break-type {
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.break-type:hover {
+    background-color: rgb(34, 119, 119);
+}
+
+.btn-activity {
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgba(34, 119, 119, 0.227);
+    border: none;
+}
+
+.btn-activity p {
+    font-weight: 600;
+}
+
+.btn-activity:hover {
+    background-color: rgb(34, 119, 119);
+}
