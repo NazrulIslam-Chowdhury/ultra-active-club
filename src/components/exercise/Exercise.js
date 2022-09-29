@@ -6,7 +6,7 @@ import './Exercise.css';
 
 const Exercise = () => {
     const [exercises, setExercises] = useState([]);
-    // const [exerciseDetails, setExerciseDetails] = useState([]);
+    const [exerciseDetails, setExerciseDetails] = useState([]);
     useEffect(() => {
         fetch('data.json')
             .then(res => res.json())
@@ -14,6 +14,8 @@ const Exercise = () => {
     }, [])
     const addOnClick = (exercise) => {
         console.log(exercise);
+        const newExerciseDetails = [...exerciseDetails, exercise];
+        setExerciseDetails(newExerciseDetails);
     }
 
     return (
@@ -28,7 +30,7 @@ const Exercise = () => {
                 </div>
 
                 <div className='exercise-duration'>
-                    <ExerciseDetails></ExerciseDetails>
+                    <ExerciseDetails exerciseDetails={exerciseDetails}></ExerciseDetails>
                 </div>
             </div>
         </div>
