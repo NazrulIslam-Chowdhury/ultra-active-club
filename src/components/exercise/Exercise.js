@@ -14,7 +14,7 @@ const Exercise = () => {
         <div>
             <h3>Select your exercise</h3>
             <div className='exercise'>
-                <div>
+                <div className='exercises'>
                     {
                         exercises.map(exercise => <ExerciseType exercise={exercise} key={exercise.id}></ExerciseType>)
                     }
